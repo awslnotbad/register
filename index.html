@@ -1,9 +1,17 @@
+<!--原作者B站ID 执笔看墨花开，本人仅作修改样式自用-->
 <!DOCTYPE html>
 <html lang="zh_CN">
 <head>
+<body background="https:\/\/api.paugram.com\/wallpaper\/?source=gh"no-repeat;
+style=" background-repeat:no-repeat ;
+background-size:100% 100%;
+background-size: cover;
+background-repeat: no-repeat;
+background-position: 50%;
+background-attachment: fixed;">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <title>Bilibili 获取注册时间</title>
+  <title>B站注册时间</title>
   <meta name="keywords" content="哔哩哔哩, bilibili, 注册时间">
   <meta name="description" content="根据用户信息获取注册时间">
   <link href="https://cdnjs.loli.net" rel="dns-prefetch">
@@ -36,7 +44,7 @@ var _hmt = _hmt || [];
       margin: auto;
     }
     .title{
-      color: #f6d365;
+      color: #ee170f;
       text-align: center;
     }
     .submit-btn{
@@ -48,13 +56,13 @@ var _hmt = _hmt || [];
       margin-top: 30px;
       cursor: pointer;
       border: 1px solid transparent;
-      background: rgb(147,51,234);
+      background: rgb(235, 5, 239);
       border-radius: 9999px;
       color: #fff;
     }
 
     .submit-btn:hover{
-      color: rgb(147, 51, 234);
+      color: rgb(235, 5, 239);
       background: #fff;
       border-color: rgb(233, 213, 255);
     }
@@ -95,7 +103,7 @@ var _hmt = _hmt || [];
       align-items: baseline;
       line-height: 2;
       font-size: 24px;
-      color: #f9bf45;
+      color: #f42809;
     }
     #short-url-value svg{
       width: 25px;
@@ -137,26 +145,11 @@ var _hmt = _hmt || [];
       display: none;
     }
 
-    .buy-me-coffee{
-      width: 80%;
-      margin: auto;
-      margin-top: 80px;
-    }
-    .buy-me-coffee img{
-      margin: auto;
-      margin-top: 30px;
-      height: 300px;
-    }
-
     .img-tips{
       text-align: center;
       margin-top: 10px;
       font-size: 14px;
       color: #999;
-    }
-
-    .vx{
-      color: #f9bf45;
     }
 
     @media (max-width: 768px) {
@@ -183,23 +176,24 @@ var _hmt = _hmt || [];
 
 </head>
 <body>
+  
 <div id="app">
-  <h4 class="title">哔哩哔哩获取注册时间</h4>
+  <h4 class="title">获取B站注册时间</h4>
   <div class="form">
     <div class="get-user-info-link">
       <a href="https://member.bilibili.com/x2/creative/h5/calendar/card?ts=1576425600&spm_id_from=333.788.b_636f6d6d656e74.6"
-         rel="noreferrer" target="_blank">获取自己的B站信息</a>
+         rel="noreferrer" target="_blank">①点我获取账号信息</a>
     </div>
     <div class="user-info-input">
       <textarea id="userInfo" autocomplete="off" rows="2" style="min-height: 33px;"
-                placeholder="请粘贴全部数据" ></textarea>
+                placeholder="请粘贴①的全部内容" ></textarea>
       <svg class="close-icon hidden" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img"
            class="iconify iconify--mdi" width="32" height="32" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41z" fill="currentColor"></path></svg>
     </div>
 
     <div class="submit-btn" id="submit">获取注册时间</div>
     <div class="short-url">
-      <div class="short-url-title">注册时间</div>
+      <div class="short-url-title">你的B站注册时间是</div>
       <div class="short-url-item bg-gray">
         <a id="short-url-value" rel="noreferrer" href="javascript:void(0)">
           <div class="short-url-value"></div>
@@ -210,36 +204,17 @@ var _hmt = _hmt || [];
         </div>
       </div>
     </div>
-  </div>
-  <div class="buy-me-coffee">
-    <div class="buy-me-coffee-header">
-      <div class="short-url-title">觉得好用，赞赏</div>
+    <div>
+      <p>
+      
+        <a href="https://icp.gov.moe/?keyword=20217478"" target="_blank" data-pjax-state="">
+        <span style="color:#ff0000">萌</span><span style="color:#ca7900">I</span><span style="color:#48ab18">C</span><span style="color:#2720ac">P</span><span style="color:#9b17ae">备</span> </a>
+        <a href="https://icp.gov.moe/?keyword=20217478" target="_blank" data-pjax-state=""> <span style="color:#ff0000">20</span><span style="color:#ca7900">21</span><span style="color:#48ab18">74</span><span style="color:#2720ac">78</span><span style="color:#f40428">号</span></a>
+      </p>
     </div>
-    <div class="download-img">
-      <img class="" src="https://zhibi-common.oss-cn-shanghai.aliyuncs.com/wx.jpeg"/>
-      <div class="img-tips">点击保存</div>
-    </div>
-
   </div>
-  <div class="footer">
-  <div class="footer">
-    <a href="https://github.com/xlzy520/bili-register-time" target="_blank">
-      By 执笔看墨花开(求⭐️)
-    </a>
-
-    <a href="https://github.com/xlzy520/bili-register-time" class="logo logo-img-2x" target="_blank">
-      <svg class="octicon octicon-mark-github v-align-middle" height="32" viewBox="0 0 16 16" version="1.1" width="32" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg>
-    </a>
-  </div>
-  <div class="loading hidden">
-    <div class="mask"></div>
-    <div class="pacman"><div></div><div></div><div></div><div></div><div></div></div>
-  </div>
-    <a download="wx.jpeg" href="https://zhibi-common.oss-cn-shanghai.aliyuncs.com/wx.jpeg" class="hidden" id="download"></a>
-
-
-  </div>
-
+  
+    
 <script>
   const clipboard = new ClipboardJS('.copy', {
     text: function () {
@@ -332,7 +307,6 @@ var _hmt = _hmt || [];
     })
     document.querySelector('.download-img').addEventListener('click', (evt) => {
       const isMobile = navigator.userAgent.includes('Mobile')
-      const originUrl = 'https://zhibi-common.oss-cn-shanghai.aliyuncs.com/wx.jpeg'
       const link = document.querySelector('#download')
       if (isMobile) {
         link.href = originUrl
